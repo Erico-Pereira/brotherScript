@@ -8,6 +8,6 @@ res = snmp_get('1.3.6.1.4.1.2435.2.3.9.4.2.1.5.5.8.0', hostname=sys.argv[1],comm
 
 indice = res.find('81')
 hexa = res[indice+12] + res[indice+13]
-hexa = int(hexa, 16)
+valor = int(hexa, 16)
 
-print(hexa)
+print(valor)
